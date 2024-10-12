@@ -15,6 +15,10 @@ public class PriorityTesting {
 	public void search(){
 		System.out.println("search successful");
 	}
+	@Test(priority=3)
+	public void logout(){
+		System.out.println("Logout successful");
+   }
 	
 }
 
