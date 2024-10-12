@@ -1,0 +1,59 @@
+package com.Tests;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Student {
+
+	public static void main(String[] args) {
+
+		boolean result =canFormPalindrome("abcdda");
+		if(result)
+
+		{
+			System.out.println("The charactes of the string can be rarranged this can be a palindrome");
+		}
+	}
+	
+
+public static boolean canFormPalindrome(String input)
+{
+
+	boolean result =false;
+Map<Character,Integer> frequencyMap = new HashMap<>();
+
+for(char ch : input.toCharArray())
+{
+if(frequencyMap.get(ch)!=null)
+{
+frequencyMap.put(ch,frequencyMap.get(ch)+1);
+
+}
+else
+{
+	frequencyMap.put(ch, 1);
+}
+}
+
+
+
+int oddCount=0;//to check if the character has an odd frequnecy
+
+for(int count :frequencyMap.values())
+{
+if(count % 2 !=0)
+{
+oddCount++;
+
+}
+}
+
+ result = oddCount<=1;
+ return result;
+
+}
+
+
+	
+
+}

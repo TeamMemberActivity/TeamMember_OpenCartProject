@@ -1,0 +1,25 @@
+package com.Tests;
+
+public class Student
+{	
+	public static void main(String[] args) {
+	
+		String inputStr ="hanumant p";
+
+		String[] resultArr = inputStr.split("\\s");
+
+		String result="";
+
+		for(int i=resultArr.length-1;i>=0;i--)
+		{
+
+		result = result + resultArr[i]+" ";
+
+
+		}
+
+		System.out.println(result+"this is test");
+
+		
+	}
+}

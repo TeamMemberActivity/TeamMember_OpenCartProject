@@ -1,0 +1,47 @@
+package com.Tests;
+
+import java.util.*;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Student {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		String inputString ="thISisMYString";
+		
+		StringBuilder result = new StringBuilder();
+		
+		for(int i=0;i<inputString.length();i++
+)
+		{
+			char ch = inputString.charAt(i);
+			if(Character.isUpperCase(ch))
+			{
+				result.append(ch);
+			}
+		}
+		
+		System.out.println(result.toString());
+		
+		
+		
+		
+	
+		
+		
+		
+	}
+
+}
+
+		
+		
+	
+	
+

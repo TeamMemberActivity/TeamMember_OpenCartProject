@@ -1,0 +1,25 @@
+package com.Tests;
+
+import java.util.HashSet;
+
+public class Student
+{	
+	public static void main(String[] args) {
+		int[] numbers = {1,2,4,4,2,1,4,5};
+		
+		HashSet<Integer> uniqueNumbers = new HashSet<Integer>();
+		
+		for(int num : numbers)
+		{
+			if(!uniqueNumbers.contains(num))
+			{
+				uniqueNumbers.add(num);
+				//System.out.println(num);
+			}
+		}
+		
+		System.out.println(uniqueNumbers);
+		
+		
+	}
+}

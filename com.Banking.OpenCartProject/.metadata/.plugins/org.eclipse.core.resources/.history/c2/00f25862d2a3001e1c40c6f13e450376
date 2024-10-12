@@ -1,0 +1,33 @@
+package com.Tests;
+
+import java.util.*;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Student {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.macys.com/");
+		
+		Thread.sleep(2000);
+		
+		driver.findElement(By.xpath("//a[@id='closeButton']")).click();
+		Thread.sleep(1000);
+		
+		
+		
+	}
+
+}
+
+		
+		
+	
+	
+

@@ -1,0 +1,35 @@
+
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="SmokeTest(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+        <exclude name="Sanity"/>
+      </run>
+    </groups>
+   
+     <classes>
+     
+   <class name="RunMultipleGroups.GroupTest1">
+        <methods>
+          <include name="checkMail"/>
+        </methods>
+      </class> <!-- RunMultipleGroups.GroupTest1 -->
+      
+      
+  
+      <class name="RunMultipleGroups.GroupTest2">
+        <methods>
+          <include name="composeMail"/>
+        </methods>
+      </class> <!-- RunMultipleGroups.GroupTest2 -->
+     
+     
+     
+      
+      
+      
+      
+    </classes>
+  </test> <!-- SmokeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

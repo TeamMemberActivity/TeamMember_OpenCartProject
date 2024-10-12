@@ -1,0 +1,31 @@
+package com.Tests;
+
+import java.util.HashMap;
+
+public class Student {
+	public static void main(String[] args) {
+
+	}
+
+	public static void printOccurencesOfEachVowel(String inputStr) {
+
+		HashMap<Character, Integer> novVowelCountMap = new HashMap<>();
+
+		for (char ch : inputStr.toCharArray()) {
+
+			if (!isVowel(ch)) {
+				if (novVowelCountMap.containsKey(ch)) {
+					novVowelCountMap.put(ch, novVowelCountMap.get(ch) + 1);
+				} else {
+					novVowelCountMap.put(ch, 1);
+				}
+			}
+
+		}
+
+	}
+
+	public static boolean isVowel(char ch) {
+		return "aeiou".indexOf(ch) != -1;
+	}
+}

@@ -1,0 +1,9 @@
+
+<suite name="Suite" >
+  <test name="Test">
+    <classes>
+      <class name="com.Banking.tests.MultipleCustomerLoginTest"/>
+       
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

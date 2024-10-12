@@ -1,0 +1,22 @@
+
+<suite name="Suite">
+  
+  <test name="SmokeTest">
+  
+  <groups>
+		<run>
+			<exclude name="Sanity"/>
+			<include name="Smoke"/>
+		</run>
+</groups>
+    
+    <classes>
+    
+      <class name="RunMultipleGroups.GroupTest1"/>
+	
+      <class name="RunMultipleGroups.GroupTest2"/>
+      
+    </classes>
+  </test> <!-- SmokeTest -->
+  
+</suite> <!-- Suite -->

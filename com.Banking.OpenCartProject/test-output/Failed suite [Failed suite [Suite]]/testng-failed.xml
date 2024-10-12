@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Failed suite [Suite]]]">
+  <test thread-count="5" name="Smoke Testing(failed)(failed)(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="RunMultipleGroups.GroupTest1">
+        <methods>
+          <include name="checkMail"/>
+        </methods>
+      </class> <!-- RunMultipleGroups.GroupTest1 -->
+      <class name="RunMultipleGroups.GroupTest2">
+        <methods>
+          <include name="composeMail"/>
+        </methods>
+      </class> <!-- RunMultipleGroups.GroupTest2 -->
+    </classes>
+  </test> <!-- Smoke Testing(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Suite]]] -->
